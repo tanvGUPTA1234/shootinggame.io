@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Shooter</title>
+
+</head>
+<style>
+    body {
+        width: 100%;
+        overflow: hidden;
+        background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7caee986-6177-4277-8e8b-a137983417a8/d331bty-e9071ebd-5464-4f66-9698-994dece96ec1.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdjYWVlOTg2LTYxNzctNDI3Ny04ZThiLWExMzc5ODM0MTdhOFwvZDMzMWJ0eS1lOTA3MWViZC01NDY0LTRmNjYtOTY5OC05OTRkZWNlOTZlYzEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.m2jP3s1gMlCYZzloTwm2aTaUdQi8IhVue0hfemxRlyc");
+        background-size: cover;
+    }
+    
+    #board {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        margin: 40px auto;
+        border: 2px solid white;
+        background-color: black;
+        overflow: hidden;
+    }
+    
+    #jet {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background: url("http://atlas-content-cdn.pixelsquid.com/stock-images/rocket-v1Q2za5-600.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        left: 50%;
+        bottom: 0px;
+    }
+    
+    .bullets {
+        position: absolute;
+        bottom: 40px;
+        left: 51%;
+        width: 20px;
+        height: 20px;
+        background: url("https://png.pngtree.com/png-clipart/20190916/original/pngtree-yellow-bullet-decoration-illustration-png-image_4596283.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .rocks {
+        position: absolute;
+        top: 0px;
+        width: 50px;
+        height: 50px;
+        background: url("https://png.pngtree.com/png-clipart/20190516/original/pngtree-ufo-ufo-spacecraft-spaceship-blue-spaceship-png-image_3928825.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    #points {
+        position: absolute;
+        top: 0px;
+        margin: 40px;
+        opacity: 0.7;
+        font-size: 10em;
+        color: white;
+    }
+</style>
+<script src="12332.js" defer></script>
+
+<body>
+    <div id="board">
+        <div class="rocks"></div>
+        <div id="jet"></div>
+    </div>
+    <div id="points">0</div>
+</body>
+
+</html>
